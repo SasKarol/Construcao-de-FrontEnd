@@ -28,18 +28,20 @@ body {
 
 .topbar {
   background: var(--primary);
-  height: 30px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
 }
 
-.brand img {
+.logo img {
   width: 28px;
-  height: 18px;
+  height: 28px;
   object-fit: cover;
   border-radius: 2px;
+  position: relative;
+  padding-top: 5px;
 }
 
 .cart {
@@ -48,50 +50,26 @@ body {
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   cursor: pointer;
-  font-size: 13px;
 }
 
-.cart-count {
-  width: 13px;
-  height: 13px;
-  background: #fff;
-  color: var(--primary);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 9px;
-  font-weight: 700;
+.cart img{
+  width: 20px;
+  height: 20px;
 }
 
 .hero {
-  min-height: 190px;
-  background-image: linear-gradient(120deg, rgba(114, 16, 127, 0.45), rgba(66, 10, 122, 0.75)), url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-overlay {
-  text-align: center;
-  color: #fff;
+.hero-overlay{
+  height: 245px;
 }
-
-.hero h1 {
-  font-family: 'Joti One', serif;
-  font-size: clamp(1.8rem, 4.4vw, 3.5rem);
-  letter-spacing: 1px;
-  line-height: 0.95;
-  text-shadow: 2px 3px 0 #4e2f7e;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 12px;
+.hero-overlay img{
+  max-width: 980px;
 }
 
 .container {
@@ -113,6 +91,7 @@ body {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  padding: 23px;
 }
 
 .product-card {
@@ -130,12 +109,12 @@ body {
 
 .favorite {
   position: absolute;
-  top: 7px;
-  right: 7px;
   border: none;
-  background: transparent;
-  color: #84768f;
-  font-size: 16px;
+  height: 10px;
+  width: 10px;
+  padding-left: 170px;
+  padding-bottom: 120px;
+  padding-right: 15px;
 }
 
 .product-card img {
@@ -146,7 +125,7 @@ body {
 }
 
 .description {
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.2;
   color: #3b3b3b;
   min-height: 40px;
@@ -154,7 +133,9 @@ body {
 
 .price {
   margin-top: 4px;
-  font-size: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
   font-weight: 700;
   color: #111;
 }
@@ -168,6 +149,16 @@ body {
   font-size: 10px;
   height: 20px;
   cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.add-cart img {
+  padding-top: 3px;
+  padding-left: 3px;
+  width: 15px;
+  height: 15px;
 }
 
 .site-footer {
