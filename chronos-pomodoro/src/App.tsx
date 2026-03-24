@@ -26,8 +26,7 @@ export function App() {
           <div className='formRow'>
             <label htmlFor='meuInput'>task</label>
             <input id='meuInput' type='text' />
-            <DefaultInput id='meuInput' type='text' />
-          </div>
+            <DefaultInput labelText='task' id='meuInput' type='text' />          </div>
 
           <div className='formRow'>
             <p>Lorem ipsum dolor sit amet.</p>
